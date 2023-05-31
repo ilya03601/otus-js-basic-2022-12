@@ -16,7 +16,7 @@ const config: webpack.Configuration = {
     environment: {
       arrowFunction: false,
     },
-    publicPath: '/',
+    publicPath: NODE_ENV === 'production' ? '/otus-js-basic-2022-12/' : '/',
   },
   resolve: {
     extensions: [".js", ".ts"],
